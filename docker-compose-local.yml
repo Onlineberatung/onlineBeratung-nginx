@@ -6,7 +6,4 @@ services:
         image: proxynginx:latest
         restart: "no"
         ports:
-          - 80:80
-        volumes:
-          - ./log:/var/log/nginx
-          - ./nginx-logrotate:/etc/nginx-logrotate
+          - 8080:80
