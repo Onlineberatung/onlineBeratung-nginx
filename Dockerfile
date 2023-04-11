@@ -1,4 +1,4 @@
-FROM nginx:1.23.3-alpine
+FROM nginx:1.23.4-alpine
 
 # Remove sym links from nginx image
 RUN rm /var/log/nginx/access.log
