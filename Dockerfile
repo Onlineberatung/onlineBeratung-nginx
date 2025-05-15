@@ -4,6 +4,8 @@ FROM nginx:1.25-alpine
 RUN rm /var/log/nginx/access.log
 RUN rm /var/log/nginx/error.log
 
+RUN apk update && apk upgrade libexpat
+
 # Install logrotate
 RUN apk update && apk add logrotate vim
 
